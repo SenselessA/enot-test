@@ -1,0 +1,78 @@
+.dailyTaskContainer {
+    background: #282828;
+    box-shadow: 16px 16px 20px rgba(0, 0, 0, 0.15), -8px -8px 20px rgba(255, 255, 255, 0.05);
+    border-radius: 40px;
+    padding: 16px 24px 18px 18px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin: 0 20px;
+}
+
+.dividerContainer>div:nth-child(1) :global(.divider) {
+    background: #FF0000;
+}
+
+.dividerContainer>div:nth-child(2) :global(.divider) {
+    background: #366EFF;
+}
+
+.dividerContainer>div:nth-child(3) :global(.divider) {
+    background: #FFEB33;
+}
+
+.container .accordion {
+    background-color: transparent;
+    color: inherit;
+    box-shadow: none;
+}
+
+.accordion .accordionSummary {
+    background: #282828;
+    box-shadow: 16px 16px 20px rgba(0, 0, 0, 0.15), -8px -8px 20px rgba(255, 255, 255, 0.05);
+    border-radius: 25px;
+}
+
+.date {
+    font-family: 'Abhaya Libre SemiBold', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+
+    color: #F4F4F4;
+}
+
+.accordion .accordionSummaryContent {
+    margin: 19px 27px 20px 15px;
+}
+
+.accordion .accordionSummaryContent:global(.Mui-expanded) {
+    margin: 19px 27px 20px 15px;
+}
+
+.dailyTaskItems {
+    background: #282828;
+    border-radius: 40px;
+    padding: 16px 24px 18px 18px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.accordionTasks {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.accordion .divider {
+    background: #A9A9A9;
+    border-radius: 3px;
+    width: 5px;
+    margin-right: 13px;
+}

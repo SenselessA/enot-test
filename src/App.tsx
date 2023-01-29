@@ -1,25 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Box} from "@mui/material";
+import {TodoList} from "./compontents/TodoList/TodoList";
+import {red} from "@mui/material/colors";
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { QueryClient, QueryClientProvider } from 'react-query'
+import NewsLineProvider from "./store/NewsLineProvider";
+
+const theme = createTheme({
+    palette: {
+        primary: {
+            main: red[500],
+        },
+    },
+});
+
+const queryClient = new QueryClient()
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <QueryClientProvider client={queryClient}>
+          <ThemeProvider theme={theme}>
+              <NewsLineProvider>
+                  <Box display={'flex'} flexDirection={'column'} minHeight={'100vh'} maxHeight={'844px'} maxWidth={'390px'} ml={'auto'} mr={'auto'}>
+                      <TodoList />
+                  </Box>
+              </NewsLineProvider>
+          </ThemeProvider>
+      </QueryClientProvider>
   );
 }
 
