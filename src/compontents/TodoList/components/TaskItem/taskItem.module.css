@@ -3,7 +3,7 @@
     border-radius: 3px;
 }
 
-p.title {
+.title {
     font-family: 'Abhaya Libre SemiBold', 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -12,7 +12,7 @@ p.title {
     letter-spacing: normal;
 }
 
-p.description {
+.description {
     font-family: 'Abhaya Libre', 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -23,7 +23,7 @@ p.description {
     color: rgba(255, 255, 255, 0.6);
 }
 
-p.title.done{
+.title.done{
     text-decoration: line-through;
 }
 

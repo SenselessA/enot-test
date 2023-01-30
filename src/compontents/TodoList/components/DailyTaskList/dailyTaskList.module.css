@@ -46,11 +46,11 @@
     color: #F4F4F4;
 }
 
-.accordion .accordionSummaryContent {
+.accordionSummaryContent {
     margin: 19px 27px 20px 15px;
 }
 
-.accordion .accordionSummaryContent:global(.Mui-expanded) {
+.accordionSummaryContent:global(.Mui-expanded) {
     margin: 19px 27px 20px 15px;
 }
 
@@ -70,7 +70,7 @@
     row-gap: 16px;
 }
 
-.accordion .divider {
+.divider {
     background: #A9A9A9;
     border-radius: 3px;
     width: 5px;
