@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import {Box} from "@mui/material";
-import {TodoList} from "./compontents/TodoList/TodoList";
+import {TodoList} from "./modules/TodoList/TodoList";
 import {red} from "@mui/material/colors";
 import { ThemeProvider, createTheme, StyledEngineProvider } from '@mui/material/styles';
 import { QueryClient, QueryClientProvider } from 'react-query'
